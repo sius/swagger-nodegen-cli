@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "A convenience package to make the swagger-codegen-cli.jar availabel for the no",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sius/swagger-codegen-cli.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
