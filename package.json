@@ -1,17 +1,17 @@
 {
-  "name": "swagger-codegen-cli",
+  "name": "swagger-nodegen-cli",
   "version": "0.0.1",
   "description": "A convenience package to make the swagger-codegen-cli.jar availabel for the no",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sius/swagger-codegen-cli.git"
+    "url": "https://github.com/sius/swagger-nodegen-cli.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "swagger-codegen-cli": "bin/swagger-codegen-cli.js"
+    "swagger-codegen-cli": "bin/swagger-nodegen-cli.js"
   },
   "author": "sius",
   "license": "Apache-2.0"
