@@ -15,15 +15,16 @@ The following dependencies would need to be installed on your machine before dow
 ## Usage
 
 Same as **swagger-codegen-cli-2.2.3jar**.
-The main command is `swagger-nodegen-cli`
-instead of `swagger-codegen-cli`.
+The main command is `swagger-codegen-cli` or `swagger-nodegen-cli`
+
+`usage: swagger-codegen-cli <command> [<args>]`
 
 `usage: swagger-nodegen-cli <command> [<args>]`
 
 Example:
 
 ```console
-> swagger-nodegen-cli help
+> swagger-codegen-cli help
 ```
 
 ### Display list of available languages
@@ -40,6 +41,6 @@ $ swagger-nodegen-cli generate -i swagger.yaml -l nodejs-server -o my-service
 
 ## Links
 
-- [https://swagger.io/docs/swagger-tools/]
+- https://swagger.io/docs/swagger-tools/
 
-- [https://oss.sonatype.org/content/repositories/releases/io/swagger/swagger-codegen-cli/]
+- https://oss.sonatype.org/content/repositories/releases/io/swagger/swagger-codegen-cli/
