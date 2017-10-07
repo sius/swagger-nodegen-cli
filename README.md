@@ -15,7 +15,7 @@ The following dependencies would need to be installed on your machine before dow
 ## Usage
 
 Same as **swagger-codegen-cli-2.2.3jar**.
-The main command is `swagger-codegen-cli` or `swagger-nodegen-cli`
+The main command is **swagger-codegen-cli** or **swagger-nodegen-cli**
 
 `usage: swagger-codegen-cli <command> [<args>]`
 
