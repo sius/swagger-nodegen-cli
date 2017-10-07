@@ -1,7 +1,7 @@
 {
   "name": "swagger-codegen-cli",
   "version": "0.0.1",
-  "description": "A convenience package to make the swagger-codegen-cli.jar availabel for node and npm",
+  "description": "A convenience package to make the swagger-codegen-cli.jar availabel for the no",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
