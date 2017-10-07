@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "swagger-codegen-cli": "bin/swagger-nodegen-cli.js"
+    "swagger-nodegen-cli": "bin/swagger-nodegen-cli.js"
   },
   "author": "sius",
   "license": "Apache-2.0"

@@ -1,5 +1,5 @@
 # swagger-nodegen-cli
-A convenience package to make the swagger-codegen-cli-<x.x.x>.jar availabe in the **node/npm** environment.
+A convenience package that wraps the **swagger-codegen-cli-2.2.3.jar** for the **node/npm** environment.
 
 ## Prerequisites
 
