@@ -1,14 +1,14 @@
 {
   "name": "swagger-nodegen-cli",
   "version": "0.0.3",
-  "description": "A simple convenience package that wraps the swagger-codegen-cli-2.2.3.jar for the node/npm environment.",
+  "description": "A simple convenience package that wraps the Java lib swagger-codegen-cli-2.2.3.jar for the node/npm environment.",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/sius/swagger-nodegen-cli.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"no tests specified, but that's Ok!\" && exit 0"
   },
   "bin": {
     "swagger-codegen-cli": "bin/swagger-codegen-cli.js",
