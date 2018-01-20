@@ -1,5 +1,6 @@
 # swagger-nodegen-cli
-A convenience package for the **node/npm** environment that wraps a **2.3.0-SNAPSHOT** version of the Java lib **swagger-codegen-cli.jar** compiled from the following [swagger-api/swagger-codegen](https://github.com/swagger-api/swagger-codegen/commit/28e2fcee785b7338049823a899c142df6d36d856) commit.
+
+A convenience package for the **node/npm** environment that wraps the Java library [**swagger-codegen-cli-2.3.0.jar**](http://repo1.maven.org/maven2/io/swagger/swagger-codegen-cli/2.3.0/swagger-codegen-cli-2.3.0.jar).
 
 ## Prerequisites
 

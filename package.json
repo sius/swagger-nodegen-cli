@@ -1,6 +1,6 @@
 {
   "name": "swagger-nodegen-cli",
-  "version": "0.1.0",
+  "version": "2.3.1",
   "description": "A simple convenience package that wraps a 2.3.0-SNAPSHOT version of the latest (2017-11-13) Java lib swagger-codegen-cli.jar for the node/npm environment.",
   "main": "index.js",
   "repository": {
