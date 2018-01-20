@@ -1,6 +1,6 @@
 # swagger-nodegen-cli
 
-A convenience package for the **node/npm** environment that wraps the Java library [**swagger-codegen-cli-2.3.0.jar**](http://repo1.maven.org/maven2/io/swagger/swagger-codegen-cli/2.3.0/swagger-codegen-cli-2.3.0.jar).
+A convenience package for the **node/npm** environment that wraps the Java library [**swagger-codegen-cli-2.3.1.jar**](http://repo1.maven.org/maven2/io/swagger/swagger-codegen-cli/2.3.1/swagger-codegen-cli-2.3.1.jar).
 
 ## Prerequisites
 
@@ -9,7 +9,7 @@ The following dependencies would need to be installed on your machine before run
 - Java, version 7 or higher
 - The Java execution path must be on your environment variable `PATH`
 
-## Installation 
+## Installation
 
 - npm install -g swagger-nodegen-cli
 
@@ -22,34 +22,38 @@ The main command is **swagger-codegen-cli** or **swagger-nodegen-cli**
 
 `usage: swagger-nodegen-cli <command> [<args>]`
 
-## Examples:
+## Examples
 
 ### Display help
 
 ```console
-> swagger-codegen-cli help
+swagger-codegen-cli help
 ```
 
 ### Display list of available languages
 
 ```console
-> swagger-nodegen-cli
+swagger-nodegen-cli
 ```
 
 ### Generate a typescript-angular (4.3) service from a `swagger`-file
 
-#### Features:
+#### Features
+
 - Generates an Angular service per defined swagger resource
 - Generates models with custom property name flavours: camelCase, PascalCase, snake_case ... (see `swagger-nodegen-cli config-help -l typescript-angular`)
 - Base path injection with InjectionToken
 
 ```console
-$ swagger-nodegen-cli generate -i swagger.yaml -l typescript-angular -o src/services
+
+swagger-nodegen-cli generate -i swagger.yaml -l typescript-angular -o src/services
+
 ```
 
 #### Integration into an Angular >= 4.3 application
 
-```
+```tree
+
 |-- angular-application
 |-- src
 |   |-- app
@@ -92,13 +96,15 @@ export class AppModule { }
 ### Generate a nodjs-server skelton from a `swagger`-file
 
 ```console
-$ swagger-nodegen-cli generate -i swagger.yaml -l nodejs-server -o my-service
+
+swagger-nodegen-cli generate -i swagger.yaml -l nodejs-server -o my-service
+
 ```
 
 ## Links
 
-- https://oss.sonatype.org/content/repositories/releases/io/swagger/swagger-codegen-cli/
+- [swagger-codegen-cli](https://oss.sonatype.org/content/repositories/releases/io/swagger/swagger-codegen-cli/)
 
-- https://github.com/swagger-api/swagger-codegen
+- [swagger-codegen](https://github.com/swagger-api/swagger-codegen)
 
-- https://swagger.io/docs/swagger-tools/
+- [swagger-tools](https://swagger.io/docs/swagger-tools/)
