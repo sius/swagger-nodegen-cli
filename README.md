@@ -1,6 +1,6 @@
 # swagger-nodegen-cli
 
-A convenience package for the **node/npm** environment that wraps the Java library [**swagger-codegen-cli-2.4.2.jar**](http://repo1.maven.org/maven2/io/swagger/swagger-codegen-cli/2.4.2/swagger-codegen-cli-2.4.2.jar).
+A convenience package for the **node/npm** environment that wraps the Java library [**swagger-codegen-cli-2.4.4.jar**](http://repo1.maven.org/maven2/io/swagger/swagger-codegen-cli/2.4.2/swagger-codegen-cli-2.4.2.jar).
 
 ## Prerequisites
 
