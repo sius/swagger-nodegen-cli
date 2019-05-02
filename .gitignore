@@ -1,3 +1,6 @@
+# ide
+.idea
+
 # Logs
 logs
 *.log
@@ -29,7 +32,7 @@ bower_components
 # node-waf configuration
 .lock-wscript
 
-# node bin files 
+# node bin files
 old/
 rc/
 
