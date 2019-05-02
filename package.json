@@ -8,6 +8,7 @@
     "url": "https://github.com/sius/swagger-nodegen-cli.git"
   },
   "scripts": {
+    "build:readme-toc": "npx doctoc .",
     "test": "echo \"no tests specified, but that's Ok!\" && exit 0"
   },
   "bin": {
