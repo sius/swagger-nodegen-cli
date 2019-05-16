@@ -1,11 +1,11 @@
 {
   "name": "swagger-nodegen-cli",
-  "version": "2.4.4",
-  "description": "A simple convenience package that wraps the swagger-codegen-cli-2.4.4 for the node/npm environment.",
+  "version": "2.4.5-mitel.1",
+  "description": "A simple convenience package that wraps the swagger-codegen-cli-2.4.5-mitel.1 for the node/npm environment.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sius/swagger-nodegen-cli.git"
+    "url": "https://github.com/mitel-networks/swagger-nodegen-cli.git"
   },
   "scripts": {
     "test": "echo \"no tests specified, but that's Ok!\" && exit 0"
@@ -14,6 +14,6 @@
     "swagger-codegen-cli": "bin/swagger-codegen-cli.js",
     "swagger-nodegen-cli": "bin/swagger-codegen-cli.js"
   },
-  "author": "sius",
+  "author": "Brett McGillis",
   "license": "Apache-2.0"
 }
