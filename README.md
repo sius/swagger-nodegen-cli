@@ -92,7 +92,7 @@ sc generate -l openapi-yaml -i <path/to/[swagger|openapi].json> -o <out folder>
 
 ```console
 
-swagger-nodegen-cli generate -i swagger.yaml -l typescript-angular -o src/services
+sc generate -i swagger.json -l typescript-angular -o src/services
 
 ```
 
@@ -143,7 +143,7 @@ export class AppModule { }
 
 ```console
 
-swagger-nodegen-cli generate -i swagger.yaml -l nodejs-server -o my-service
+sc generate -i swagger.yaml -l nodejs-server -o my-server
 
 ```
 
