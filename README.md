@@ -1,6 +1,7 @@
 # swagger-nodegen-cli
 
-A convenience package for the **node/npm** environment that wraps the Java library [**swagger-codegen-cli-2.4.4.jar**](http://repo1.maven.org/maven2/io/swagger/swagger-codegen-cli/2.4.4/swagger-codegen-cli-2.4.4.jar).
+A convenience package for the **node/npm** environment that wraps the Java library 
+**swagger-codegen-cli**
 
 ## Prerequisites
 
@@ -9,14 +10,29 @@ The following dependencies would need to be installed on your machine before run
 - Java, version 7 or higher
 - The Java execution path must be on your environment variable `PATH`
 
+## Important Note
+The current version of **swagger-codegen-cli-3.x.x** supports **fewer languages** ​​than the older versions (**2.x.x**):
+
+```console
+Available languages: [aspnetcore, csharp, csharp-dotnet2, dynamic-html,html, html2, java, jaxrs-cxf-client, jaxrs-cxf, inflector, jaxrs-cxf-cdi, jaxrs-spec, jaxrs-jersey, jaxrs-di, jaxrs-resteasy-eap, jaxrs-resteasy, spring, nodejs-server, openapi, openapi-yaml, kotlin-client, kotlin-server, php, python, scala, scala-akka-http-server, swift3, swift4, typescript-angular]
+```
+
 ## Installation
 
-- npm install -g swagger-nodegen-cli
+### Npm package for use with [swagger-codegen-cli-3.0.8.jar](http://central.maven.org/maven2/io/swagger/codegen/v3/swagger-codegen-cli/3.0.8/swagger-codegen-cli-3.0.8.jar)
 
-## Usage
+`npm install -g swagger-nodegen-cli`
+
+### Npm package for use with [swagger-codegen-cli-2.4.4.jar](http://repo1.maven.org/maven2/io/swagger/swagger-codegen-cli/2.4.4/swagger-codegen-cli-2.4.4.jar)
+
+`npm install -g swagger-nodegen-cli@2.4.4`
+
+## Usage Version 3.0.8 ([Version 2.4.4](https://www.npmjs.com/package/swagger-nodegen-cli/v/2.4.4))
 
 Same as **swagger-codegen-cli.jar** without `java -jar ...`
-The main command is **swagger-codegen-cli** or **swagger-nodegen-cli**
+The main command is **sc**, **swagger-codegen-cli** or **swagger-nodegen-cli**
+
+`usage: sc <command> [<args>]`
 
 `usage: swagger-codegen-cli <command> [<args>]`
 
@@ -24,16 +40,40 @@ The main command is **swagger-codegen-cli** or **swagger-nodegen-cli**
 
 ## Examples
 
-### Display help
+### Display help, extended help, version and available languages
 
 ```console
-swagger-codegen-cli help
+# help, extended help
+sc -h
+sc generate -h
+
+# Version
+sc version
+
+# Available languages
+sc
+sc langs
+
 ```
 
-### Display list of available languages
+### Display detailed generation config options for a specific language
 
 ```console
-swagger-nodegen-cli
+sc config-help -l typescript-angular
+```
+
+### Generate openapi.json (v3) from swagger.json (v2) or openapi.yaml (v3)
+
+```console
+sc generate -l openapi -i <path/to/[swagger.json|openapi.yaml]> -o <out folder>
+
+```
+
+### Generate openapi.yaml (v3) from swagger.json (v2) or openapi.json (v3)
+
+```console
+sc generate -l openapi-yaml -i <path/to/[swagger|openapi].json> -o <out folder>
+
 ```
 
 ### Generate a typescript-angular (4.3) service from a `swagger`-file
@@ -102,8 +142,6 @@ swagger-nodegen-cli generate -i swagger.yaml -l nodejs-server -o my-service
 ```
 
 ## Links
-
-- [swagger-codegen-cli](https://oss.sonatype.org/content/repositories/releases/io/swagger/swagger-codegen-cli/)
 
 - [swagger-codegen](https://github.com/swagger-api/swagger-codegen)
 

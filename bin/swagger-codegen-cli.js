@@ -1,5 +1,9 @@
 #!/usr/bin/env node
+var argv = process.argv;
+if (argv.length == 2) {
+  argv.push('langs')
+}
 require('child_process')
   .spawn('java', [
-    '-jar', __dirname + '/swagger-codegen-cli-2.4.4.jar']
-      .concat(process.argv.slice(2)), {stdio: 'inherit'})
+    '-jar', __dirname + '/swagger-codegen-cli-3.0.8.jar']
+      .concat(argv.slice(2)), { stdio: 'inherit' })
