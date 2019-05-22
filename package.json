@@ -1,6 +1,6 @@
 {
   "name": "swagger-nodegen-cli",
-  "version": "3.0.8",
+  "version": "3.0.9-rc.0",
   "description": "A simple convenience package that wraps the swagger-codegen-cli for the node/npm environment.",
   "main": "index.js",
   "repository": {
