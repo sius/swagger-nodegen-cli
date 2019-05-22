@@ -87,7 +87,7 @@ sc generate -l openapi-yaml -i <path/to/[swagger|openapi].json> -o <out folder>
 #### Features
 
 - Generates an Angular service per defined swagger resource
-- Generates models with custom property name flavours: camelCase, PascalCase, snake_case ... (see `swagger-nodegen-cli config-help -l typescript-angular`)
+- Generates models with custom property name flavours: camelCase, PascalCase, snake_case ... (see `sc config-help -l typescript-angular`)
 - Base path injection with InjectionToken
 
 ```console
