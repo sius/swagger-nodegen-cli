@@ -1,6 +1,6 @@
 # swagger-nodegen-cli
 
-A convenience package for the **node/npm** environment that wraps the Java library 
+A convenience package for the **node/npm** environment that wraps the Java library
 **swagger-codegen-cli**
 
 ## Prerequisites
@@ -11,6 +11,7 @@ The following dependencies would need to be installed on your machine before run
 - The Java execution path must be on your environment variable `PATH`
 
 ## Important Note
+
 The current version of **swagger-codegen-cli-3.x.x** supports **fewer languages** ​​than the older versions (**2.x.x**):
 
 ```console
@@ -25,7 +26,7 @@ Available languages: [aspnetcore, csharp, csharp-dotnet2,
 
 ## Installation
 
-### Npm package for use with [swagger-codegen-cli-3.0.8.jar](http://central.maven.org/maven2/io/swagger/codegen/v3/swagger-codegen-cli/3.0.8/swagger-codegen-cli-3.0.8.jar)
+### Npm package for use with [swagger-codegen-cli-3.0.19.jar](http://central.maven.org/maven2/io/swagger/codegen/v3/swagger-codegen-cli/3.0.19/swagger-codegen-cli-3.0.19.jar)
 
 `npm install -g swagger-nodegen-cli`
 
@@ -33,7 +34,7 @@ Available languages: [aspnetcore, csharp, csharp-dotnet2,
 
 `npm install -g swagger-nodegen-cli@2.4.4`
 
-## Usage Version 3.0.8 ([Version 2.4.4](https://www.npmjs.com/package/swagger-nodegen-cli/v/2.4.4))
+## Usage Version 3.0.19 ([Version 2.4.4](https://www.npmjs.com/package/swagger-nodegen-cli/v/2.4.4))
 
 Same as **swagger-codegen-cli.jar** without `java -jar ...`
 The main command is **sc**, **swagger-codegen-cli** or **swagger-nodegen-cli**
@@ -115,28 +116,19 @@ sc generate -i swagger.json -l typescript-angular -o src/services
 `./src/app/app.module.ts`
 
 ```typescript
-import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
-import { BrowserModule }  from '@angular/platform-browser';
-import { AppComponent } from './app.component';
-import { ApiModule, BASE_PATH } from '../services';
+import { NgModule } from "@angular/core";
+import { HttpClientModule } from "@angular/common/http";
+import { BrowserModule } from "@angular/platform-browser";
+import { AppComponent } from "./app.component";
+import { ApiModule, BASE_PATH } from "../services";
 
 @NgModule({
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    ApiModule
-  ],
-  declarations: [
-    AppComponent
-  ],
-  providers: [
-    { provide: BASE_PATH, useValue: 'http://localhost:10010' }
-  ],
-  bootstrap: [ AppComponent ]
+  imports: [BrowserModule, HttpClientModule, ApiModule],
+  declarations: [AppComponent],
+  providers: [{ provide: BASE_PATH, useValue: "http://localhost:10010" }],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
-
+export class AppModule {}
 ```
 
 ### Generate a nodjs-server skelton from a `swagger`-file
