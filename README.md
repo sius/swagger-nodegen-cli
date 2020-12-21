@@ -25,7 +25,7 @@ Available languages: [aspnetcore, csharp, csharp-dotnet2,
 
 ## Installation
 
-### Npm package for use with [swagger-codegen-cli-3.0.19.jar](http://central.maven.org/maven2/io/swagger/codegen/v3/swagger-codegen-cli/3.0.19/swagger-codegen-cli-3.0.19.jar)
+### Npm package for use with [swagger-codegen-cli-3.0.23.jar](http://central.maven.org/maven2/io/swagger/codegen/v3/swagger-codegen-cli/3.0.23/swagger-codegen-cli-3.0.23.jar)
 
 `npm install -g swagger-nodegen-cli`
 
@@ -33,7 +33,7 @@ Available languages: [aspnetcore, csharp, csharp-dotnet2,
 
 `npm install -g swagger-nodegen-cli@2.4.4`
 
-## Usage Version 3.0.19 ([Version 2.4.4](https://www.npmjs.com/package/swagger-nodegen-cli/v/2.4.4))
+## Usage Version 3.0.23 ([Version 2.4.4](https://www.npmjs.com/package/swagger-nodegen-cli/v/2.4.4))
 
 Same as **swagger-codegen-cli.jar** without `java -jar ...`
 The main command is **sc**, **swagger-codegen-cli** or **swagger-nodegen-cli**
