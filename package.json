@@ -16,5 +16,8 @@
     "sc": "bin/swagger-codegen-cli.js"
   },
   "author": "sius",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "dependencies": {
+    "user": "^0.0.0"
+  }
 }
