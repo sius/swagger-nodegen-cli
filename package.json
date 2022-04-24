@@ -8,7 +8,7 @@
     "url": "https://github.com/sius/swagger-nodegen-cli.git"
   },
   "scripts": {
-    "test": "echo \"no tests specified, but that's Ok!\" && exit 0"
+    "test": "swagger-codegen-cli generate -i ./test/api/petstore-expanded-openapi-v3.yml -l typescript-angular -o src/services"
   },
   "bin": {
     "swagger-codegen-cli": "bin/swagger-codegen-cli.js",

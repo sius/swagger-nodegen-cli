@@ -29,16 +29,17 @@ jaxrs-cxf-client, jaxrs-cxf, inflector, jaxrs-cxf-cdi, jaxrs-spec, jaxrs-jersey,
 
 `npm install -g swagger-nodegen-cli@2.4.4`
 
-## Usage Version 2.4.4 ([Version 2.4.4](https://www.npmjs.com/package/swagger-nodegen-cli/v/2.4.4))
-
+## Usage
 Same as **swagger-codegen-cli.jar** without `java -jar ...`
-The main command is **sc**, **swagger-codegen-cli** or **swagger-nodegen-cli**
-
-`usage: sc <command> [<args>]`
+The main command is **sc**, **swagger-codegen-cli** or **swagger-nodegen-cli** (under Windows **sc** is in conflict with `sc.exe`)
 
 `usage: swagger-codegen-cli <command> [<args>]`
 
 `usage: swagger-nodegen-cli <command> [<args>]`
+
+`usage: sc <command> [<args>]` (under windows `sc` is in conflicts with `sc.exe`)
+
+- Version 2.4.4 ([Version 2.4.4](https://www.npmjs.com/package/swagger-nodegen-cli/v/2.4.4))
 
 ## Examples
 
@@ -46,53 +47,52 @@ The main command is **sc**, **swagger-codegen-cli** or **swagger-nodegen-cli**
 
 ```console
 # help, extended help
-sc -h
-sc generate -h
+swagger-codegen-cli -h
+swagger-codegen-cli generate -h
 
 # Version
-sc version
+swagger-codegen-cli version
 
 # Available languages
-sc
-sc langs
+swagger-codegen-cli
+swagger-codegen-cli langs
 
 ```
 
 ### Display detailed generation config options for a specific language
 
 ```console
-sc config-help -l typescript-angular
+swagger-codegen-cli config-help -l typescript-angular
 ```
 
 ### Generate openapi.json (v3) from swagger.json (v2) or openapi.yaml (v3)
 
 ```console
-sc generate -l openapi -i <path/to/[swagger.json|openapi.yaml]> -o <out folder>
+swagger-codegen-cli generate -l openapi -i <path/to/[swagger.json|openapi.yaml]> -o <out folder>
 
 ```
 
 ### Generate openapi.yaml (v3) from swagger.json (v2) or openapi.json (v3)
 
 ```console
-sc generate -l openapi-yaml -i <path/to/[swagger|openapi].json> -o <out folder>
+swagger-codegen-cli generate -l openapi-yaml -i <path/to/[swagger|openapi].json> -o <out folder>
 
 ```
 
-### Generate a typescript-angular (4.3) service from a `swagger`-file
+### Generate a typescript-angular service from an Open API V2 (`swagger`)/V3 - JSON or YML file
 
 #### Features
 
 - Generates an Angular service per defined swagger resource
-- Generates models with custom property name flavours: camelCase, PascalCase, snake_case ... (see `sc config-help -l typescript-angular`)
+- Generates models with custom property name flavours: camelCase, PascalCase, snake_case ... (see `swagger-codegen-cli config-help -l typescript-angular`)
 - Base path injection with InjectionToken
 
 ```console
-
-sc generate -i swagger.json -l typescript-angular -o src/services
-
+swagger-codegen-cli generate -i swagger.json -l typescript-angular -o src/services
+swagger-codegen-cli generate -i open-api.yml -l typescript-angular -o src/services
 ```
 
-#### Integration into an Angular >= 4.3 application
+#### Integration into an Angular application
 
 ```tree
 
@@ -135,11 +135,12 @@ export class AppModule { }
 
 ```
 
-### Generate a nodjs-server skelton from a `swagger`-file
+### Generate a nodjs-server skelton from an Open API V2 (`swagger`)/V3 - JSON or YML file
 
 ```console
 
-sc generate -i swagger.yaml -l nodejs-server -o my-server
+swagger-codegen-cli generate -i swagger.json -l nodejs-server -o my-server
+swagger-codegen-cli generate -i open-api.yml -l nodejs-server -o my-server
 
 ```
 
