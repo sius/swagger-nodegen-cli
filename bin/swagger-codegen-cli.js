@@ -7,3 +7,8 @@ require('child_process')
   .spawn('java', [
     '-jar', __dirname + '/swagger-codegen-cli-3.0.34.jar']
       .concat(argv.slice(2)), { stdio: 'inherit' })
+      .on('exit', code => {
+        if (code != 0) {
+          console.log(code)
+        }
+      });

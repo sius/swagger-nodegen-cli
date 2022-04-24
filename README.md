@@ -132,7 +132,6 @@ import { ApiModule, BASE_PATH } from '../services';
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
-
 ```
 
 ### Generate a nodjs-server skelton from an Open API V2 (`swagger`)/V3 - JSON or YML file
