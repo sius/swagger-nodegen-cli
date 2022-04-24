@@ -14,18 +14,14 @@ The following dependencies would need to be installed on your machine before run
 The current version of **swagger-codegen-cli-3.x.x** supports **fewer languages** ​​than the older versions (**2.x.x**):
 
 ```console
-Available languages: [aspnetcore, csharp, csharp-dotnet2,
- dynamic-html,html, html2, java, jaxrs-cxf-client, jaxrs-cxf,
- inflector, jaxrs-cxf-cdi, jaxrs-spec, jaxrs-jersey, jaxrs-di,
- jaxrs-resteasy-eap, jaxrs-resteasy, spring, nodejs-server,
- openapi, openapi-yaml, kotlin-client, kotlin-server, php,
- python, scala, scala-akka-http-server, swift3, swift4,
- typescript-angular]
+Available languages: [dart, aspnetcore, csharp, csharp-dotnet2, 
+go, go-server, dynamic-html, html, html2, java, 
+jaxrs-cxf-client, jaxrs-cxf, inflector, jaxrs-cxf-cdi, jaxrs-spec, jaxrs-jersey, jaxrs-di, jaxrs-resteasy-eap, jaxrs-resteasy, micronaut, spring, nodejs-server, openapi, openapi-yaml, kotlin-client, kotlin-server, php, python, python-flask, r, ruby, scala, scala-akka-http-server, swift3, swift4, swift5, typescript-angular, typescript-axios, typescript-fetch, javascript]
 ```
 
 ## Installation
 
-### Npm package for use with [swagger-codegen-cli-3.0.24.jar](https://repo1.maven.org/maven2/io/swagger/codegen/v3/swagger-codegen-cli/3.0.24/swagger-codegen-cli-3.0.24.jar)
+### Npm package for use with [swagger-codegen-cli-3.0.34.jar](https://repo1.maven.org/maven2/io/swagger/codegen/v3/swagger-codegen-cli/3.0.34/swagger-codegen-cli-3.0.34.jar)
 
 `npm install -g swagger-nodegen-cli`
 
@@ -33,7 +29,7 @@ Available languages: [aspnetcore, csharp, csharp-dotnet2,
 
 `npm install -g swagger-nodegen-cli@2.4.4`
 
-## Usage Version 3.0.24 ([Version 2.4.4](https://www.npmjs.com/package/swagger-nodegen-cli/v/2.4.4))
+## Usage Version 2.4.4 ([Version 2.4.4](https://www.npmjs.com/package/swagger-nodegen-cli/v/2.4.4))
 
 Same as **swagger-codegen-cli.jar** without `java -jar ...`
 The main command is **sc**, **swagger-codegen-cli** or **swagger-nodegen-cli**
