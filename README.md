@@ -21,7 +21,7 @@ jaxrs-cxf-client, jaxrs-cxf, inflector, jaxrs-cxf-cdi, jaxrs-spec, jaxrs-jersey,
 
 ## Installation
 
-### Npm package for use with [swagger-codegen-cli-3.0.34.jar](https://repo1.maven.org/maven2/io/swagger/codegen/v3/swagger-codegen-cli/3.0.34/swagger-codegen-cli-3.0.34.jar)
+### Npm package for use with [swagger-codegen-cli-3.0.35.jar](https://repo1.maven.org/maven2/io/swagger/codegen/v3/swagger-codegen-cli/3.0.35/swagger-codegen-cli-3.0.35.jar)
 
 `npm install -g swagger-nodegen-cli`
 
